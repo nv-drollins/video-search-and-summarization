@@ -13,6 +13,14 @@
 - [Quickstart Guide](#quickstart-guide)
 - [License](#license)
 
+## Sudo Prompts
+
+First-time setup may need sudo for host packages, Docker/NVIDIA toolkit configuration, or setup preflight checks. Passwordless sudo is not required, but install commands must run from an interactive terminal so sudo can prompt. When installing over SSH, use:
+
+```bash
+ssh -t nvidia@<spark-ip>
+```
+
 ## Overview
 
 The [NVIDIA Blueprint for Video Search and Summarization (VSS)](https://docs.nvidia.com/vss/latest/index.html) provides a suite of reference architectures for building vision agents and AI-powered video analytics applications. Those architectures bring together accelerated vision microservices, vision language models (VLMs), and large language models (LLMs) so you can use them in existing applications, as standalone microservices, or as part of a larger vision agent.
